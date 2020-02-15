@@ -1,11 +1,13 @@
-$(document).ready(function() {
-  $('div.amenities LI INPUT').on('change', function() {
-    const dictionary = {}
-    if ($(this).prop('checked')) {
-      dictionary[($(this).attr('data-id'))] = $(this).attr('data-name')
-    } else {
-      delete dictionary[($(this).attr('data-id'))];
-    }
-    $('div.amenities H4').html(Object.values(dictionary).join(', '));
-  })
+$(function () {
+  const listAmenities = {};
+
+  $('div.amenities li input').change(
+    function () {
+      if ($(this).is(':checked')) {
+        listAmenities[($(this).attr('data-id'))] = $(this).attr('data-name');
+      } else {
+        delete listAmenities[($(this).attr('data-id'))];
+      }
+      $('div.amenities h4').html(Object.values(listAmenities).join(', ') || '&nbsp;');
+    });
 });
