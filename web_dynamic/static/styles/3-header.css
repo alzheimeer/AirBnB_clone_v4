@@ -12,7 +12,7 @@ header {
 	width: 100%;
 	border-bottom: 1px solid #CCCCCC;
 	display: flex;
-  align-items: center;
+	align-items: center;
 }
 
 #api_status {
