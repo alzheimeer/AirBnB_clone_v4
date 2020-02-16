@@ -14,15 +14,14 @@ header {
 }
 
 #api_status {
-	float: right;
-	border-radius: 50%;
-	background-color: color #cccccc
-	margin-left: auto;
-  margin-right: 30px;
-	width: 40px;
-  height: 40px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 #api_status.available {
-	background-color: color #ff545f
+    background-color: #FF545F;
 }
